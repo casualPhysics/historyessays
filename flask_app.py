@@ -52,7 +52,7 @@ def hello_world():
         </ul>
         <h2>Ideas in Condensed Matter Theory</h2>
         <ul>
-            <li><a href="/history_of_resistance">The Mathematics of Lattices</a></li>
+            <li><a href="/history_of_resistance">The Mathematics of Lattices </a></li>
             <li><a href="/history_of_resistance">Surfaces of Minimal Energy, Fermi Surfaces</a></li>
         </ul>
 
