@@ -41,9 +41,9 @@ def hello_world():
         }
     </style>
     <body>
-        <h2>Essays on Physics</h2>
+        <h2>Learning Physics Differently</h2>
         <ul>
-            <li><a href="/history_of_resistance">A History of Resistance in Metals</a></li>
+            <li><a href="/history_of_resistance">Do Physics, Learn History</a></li>
         </ul>
         <h2>Discussions on Classic Textbook Problems</h2>
         <ul>
@@ -63,7 +63,7 @@ def hello_world():
 
 @app.route("/history_of_resistance")
 def history_of_metallic_resistance():
-    with open('history_of_resistance.html', 'r', encoding='utf-8') as file:
+    with open('do_physics_but_learn_history.html', 'r', encoding='utf-8') as file:
         html_content = file.read()
     return html_content
 
