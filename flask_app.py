@@ -1,4 +1,5 @@
-from flask import Flask
+from flask import Flask, url_for, current_app
+
 
 app = Flask(__name__)
 
@@ -63,9 +64,7 @@ def hello_world():
 
 @app.route("/history_of_resistance")
 def history_of_metallic_resistance():
-    with open('do_physics_but_learn_history.html', 'r', encoding='utf-8') as file:
-        html_content = file.read()
-    return html_content
+    return current_app.send_static_file('do_physics_but_learn_history.html')
 
 
 @app.route("/ashcroft_and_mermin")
