@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>Noticing Problems - Diving into Physics for Biology</title>
+	</head>
+
+<style>
+    /* Apply padding to all paragraphs  */
+	h1 {
+        padding: 20px; /* top, right, bottom, left */
+        padding-left: 50px; /* top, right, bottom, left */
+        max-width: 400px; /* Set maximum width */
+    }
+
+	h2 {
+        padding: 20px; /* top, right, bottom, left */
+        padding-left: 50px; /* top, right, bottom, left */
+        max-width: 400px; /* Set maximum width */
+    }
+
+	h3 {
+        padding-left: 50px; /* top, right, bottom, left */
+        max-width: 400px; /* Set maximum width */
+    }
+
+	h4 {
+        padding-left: 50px; /* top, right, bottom, left */
+        max-width: 400px; /* Set maximum width */
+    }
+
+
+    p {
+        padding-bottom: 10px; /* top, right, bottom, left */
+		padding-left: 50px; /* top, right, bottom, left */
+
+        max-width: 400px; /* Set maximum width */
+    }
+
+    /* Apply padding to a specific element with class "box" */
+    .box {
+        padding: 30px; /* top, right, bottom, left */
+    }
+
+    /* Apply different padding to an element with id "header" */
+    #header {
+        padding-top: 10px; /* 10 pixels of padding on the top */
+        padding-bottom: 20px; /* 20 pixels of padding on the bottom */
+        padding-left: 15px; /* 15 pixels of padding on the left */
+        padding-right: 15px; /* 15 pixels of padding on the right */
+    }
+</style>
+
+<body>
+<h2>Noticing Problems - Diving into Physics for Biology</h2>
+
+<p>For some context: I did my undergrad in math and master’s in theoretical physics at a good school. I now work in trading. But I’m still trying to find ways to be useful in the sciences as an amateur. And I wanted to get people’s thoughts on some notes I wrote below. Ideas subject to change. </p>
+
+<p>In my quest to be a semi-useful amateur physicist, I’m trying to figure out where the niche problems are in greenfield areas, like quantum bio, that other pro-academics might not have time to look at. I thought that attempting computations, and asking ‘hey, should it be this hard to do?’ might serve as a decent prompt to finding some ideas. I think as an outsider this approach is great because you don’t have the influence of other people telling you something should be easy. This post is about my difficult experience in simulation software for quantum bio experiments.</p>
+
+<p>When I started to read papers on quantum biology, I found that most of the experiments were computational. And most relied on a cocktail of different pieces of code and different bits of computational biology software to get a result. And I’ve been struggling to replicate them. With so many independent parts that researchers do separately, I think that it is amazing that these computational experiments are replicable among different groups with all that config. Even more so due to the fact that everyone is using different computers. So I tried to have a stab at running simple toy quantum mechanics / molecular mechanics (QM / MM) simulation on a laptop to start with a program called VMD.</p>
+
+<p>I realised trying to start a basic QM / MM simulation is just really hard. And I think quite a few people agree. I posted on reddit about it, and emailing certain academics in the field asking ‘hey don’t you think this is just really hard to setup?’. And everyone I’ve emailed thinks compilation and simulation set up is just a pain in the ass. Cloud based solutions didn’t seem that easy to use either. I am trying to train myself to notice interesting problems by just asking dumb questions, and I think this is one of them - but posting here to see if I’m actually correct. </p>
+
+<p>The first thing that makes it hard is that a lot of computational chemistry software is just old-style and not that aesthetic, so its already intimidating to begin with. It doesn’t allow for the easy entrance of hobbyists. And as we know from the computing revolution, hobbyists play a huge role in developing the ecosystem. </p>
+
+<p>And if something breaks, its hard to know where to go for help (since its a niche field). The use of different softwares make it hard to share simulation configuration, so you can’t easily get other people to replicate your problem, let alone run your simulation. Given the replicability crisis there are no easy ways, that I know of, to share simulation config amongst researchers. </p>
+
+<p>What doesn’t make it easier is that there are no good guides to at least getting a decent home lab setup so that simulations run on the order of hours, and not days. And I think academics are confused about this too, they are surprised when I tell them that other labs use high powered desktop setups instead of national supercomputers. Perhaps no one really thinks about which simulations can actually be done without supercompute - and this is not clear at all. </p>
+
+<p>It’s expensive to get started. Some tools in the landscape (Gaussian) are expensive. I don’t think it should be this way, and this just feels like a symptom that the field of computational chemistry is not mature enough. A lot of things are becoming free though, like PySCF, but these don’t seem geared to QBio. Everything is completely free if we look at other fields like machine learning and deep learning.</p>
+
+<p>I think something that might ease these issues is making a very, very simple and clear tutorial on how to get started. And this is something that I want to build. I am trying to think of a way to make a tutorial that I would actually use if I was starting out. I would like a tutorial to actually learn how QM/MM works bare bones, and what it gives that classical simulations don&#39;t. I would also like a tutorial with real bare bones cases. And also, include a section on getting a decent homelab with a budget. </p>
+
+<p>For example (starting from the beginning), in a good tutorial I would expect that:</p>
+
+<ul>
+	<li>What quantities do classical molecular dynamics simulations give us - I think I need to review how this works</li>
+	<li>Where do classical simulations fail </li>
+	<li>How do basic quantum simulations work </li>
+	<li>Where do the basic quantum simulations fail</li>
+	<li>How does QM/MM fix the failure </li>
+	<li>What quantities does QM/MM give us </li>
+	<li>What differences in magnitude can we expect from QM / MM vs classical simulations </li>
+</ul>
+
+<p>Anyway, those are some of my thoughts. Feedback really appreciated. </p>
+
+</body>
+</html>
+

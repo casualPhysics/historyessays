@@ -45,6 +45,7 @@ def hello_world():
         <h2>Learning Physics Differently</h2>
         <ul>
             <li><a href="/history_of_resistance">Do Physics, Learn History</a></li>
+            <li><a href="/noticing_problems">Noticing Problems - Simulating Physics in Biology</a></li>
         </ul>
         <h2>Discussions on Classic Textbook Problems</h2>
         <ul>
@@ -65,6 +66,11 @@ def hello_world():
 @app.route("/history_of_resistance")
 def history_of_metallic_resistance():
     return current_app.send_static_file('do_physics_but_learn_history.html')
+
+
+@app.route("/noticing_problems")
+def noticing_problems():
+    return current_app.send_static_file('noticing_problems.html')
 
 
 @app.route("/ashcroft_and_mermin")
